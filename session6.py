@@ -11,15 +11,16 @@ for x in second_list:
         first_list.append(x)
 print(first_list)
 
-
 """Q2: Define two tuples, first_tuple and second_tuple, with the following content:
 first_tuple contains the integers 1, 2, and 3.
 second_tuple contains the strings "apple," "banana," and "cherry."
 Write a Python program to calculate and print the total number of items in both first_tuple and
 second_tuple combined."""
 
-
-
+first_tuple = (1, 2, 3)
+second_tuple = ("apple", "banana", "cherry")
+combined_tuple = first_tuple + second_tuple
+print(len(combined_tuple))
 
 """Q3: Define a tuple named fruits containing the following elements: "apple," "banana,"
 "cherry," "date," "elderberry," "fig," and "grape." Write a Python program to extract and print the
