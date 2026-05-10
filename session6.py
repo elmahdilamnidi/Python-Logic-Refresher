@@ -7,7 +7,6 @@ the loop, print the combined first_list to see the result."""
 first_list = [1, 2, 3]
 second_list = ["apple", "banana", "cherry"]
 for x in second_list:
-    if x not in first_list:
         first_list.append(x)
 print(first_list)
 
@@ -26,20 +25,26 @@ print(len(combined_tuple))
 "cherry," "date," "elderberry," "fig," and "grape." Write a Python program to extract and print the
 third, fourth, and fifth items from the fruits tuple using slicing."""
 
-
-
-
+fruits = ("apple", "banana", "cherry", "date", "elderberry", "fig", "grape")
+print(fruits[2:5])
 
 """Q4: Create a tuple named fruits containing the following elements: "apple," "banana,"
 "cherry," "date," "elderberry," "fig," and "grape." Write a Python program to check if "apple" is
 present in the fruits tuple. If it is, print "Yes, 'apple' is in the fruits tuple," otherwise, print "No, 'apple'
 is not in the fruits tuple. """
 
-
-
-
-
+fruits = ("apple", "banana", "cherry", "date", "elderberry", "fig", "grape")
+if "apple" in fruits :
+    print("Yes, 'apple' is in the fruits tuple. ")
+else :
+    print("No, 'apple'is not in the fruits tuple.") 
 
 """Q5: You have a tuple named fruits containing the elements "apple," "banana," and "cherry."
 Write a Python program to convert this tuple into a list, change the second element to "kiwi," and
 then convert it back to a tuple. Print the final tuple."""
+
+fruits = ("apple", "banana", "cherry")
+new_fruits = list(fruits)
+new_fruits.insert(1,"kiwi")
+fruits = tuple(new_fruits)
+print(fruits)
