@@ -6,7 +6,8 @@ the loop, print the combined first_list to see the result."""
 
 first_list = [1, 2, 3]
 second_list = ["apple", "banana", "cherry"]
-first_list.append(second_list)
+for item in second_list:
+    first_list.append(item)
 print(first_list)
 
 """Q2: Define two tuples, first_tuple and second_tuple, with the following content:
@@ -44,6 +45,6 @@ then convert it back to a tuple. Print the final tuple."""
 
 fruits = ("apple", "banana", "cherry")
 new_fruits = list(fruits)
-new_fruits.insert(1,"kiwi")
+new_fruits[1] = ("kiwi")
 fruits = tuple(new_fruits)
 print(fruits)
