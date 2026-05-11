@@ -6,8 +6,7 @@ the loop, print the combined first_list to see the result."""
 
 first_list = [1, 2, 3]
 second_list = ["apple", "banana", "cherry"]
-for x in second_list:
-        first_list.append(x)
+first_list.append(second_list)
 print(first_list)
 
 """Q2: Define two tuples, first_tuple and second_tuple, with the following content:
